@@ -67,10 +67,11 @@ export class RestDataSource {
   private getOptions() {
     return {
       headers: new HttpHeaders({
-        "Authorization": `Bearer<${this.auth_token}>`
+        "Authorization": `Bearer ${this.auth_token}`  // Space added after 'Bearer'
       })
-    }
+    };
   }
+  
 
 
 

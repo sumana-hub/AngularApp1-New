@@ -15,7 +15,7 @@ export class ProductRepository {
   }
   getProducts(category?: string): Product[] {
     return this.products
-      .filter(p => category == undefined || category == p.timeslot);
+      .filter(p => !category /*== undefined */ || category === p.area);
   }
   getProduct(id: number): Product | undefined {
     return this.products.find(p => p.id == id);

@@ -1,6 +1,6 @@
 module.exports = function () {
   return {
-    reservations: [
+    products: [
       {
         id: 1, timeslot: "9:00am - 12:00pm", area: "Banff National Park",
         description: "A breathtaking mountain landscape", price: 50
